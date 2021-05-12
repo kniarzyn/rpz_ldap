@@ -24,7 +24,8 @@ defmodule RpzLdap.MixProject do
   defp deps do
     [
       {:exldap, "~> 0.6"},
-      {:mix_test_watch, "~> 1.0", only: :dev, runtime: false}
+      {:mix_test_watch, "~> 1.0", only: :dev, runtime: false},
+      {:dialyxir, "~> 1.0", only: [:dev], runtime: false}
     ]
   end
 end
